@@ -31,4 +31,8 @@ jobs:
         path: |
           ./out/coverage
           ./out/coverage.html
-
+    - uses: codecov/codecov-action@v1
+      with:
+        file: ./out/coverage
+        fail_ci_if_error: true
+        verbose: true
